@@ -1,28 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Experiencia de RA con A-Frame</title>
-  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/ar.js/aframe/build/aframe-ar.min.js"></script>
-</head>
-<body style="margin: 0; overflow: hidden;">
-  <!-- Configuración de la escena -->
-  <a-scene embedded arjs>
-    <!-- Patrón para la detección (Hiro por defecto) -->
-    <a-marker preset="hiro">
-      <!-- Esfera animada -->
-      <a-sphere 
-        position="0 0.5 0" 
-        radius="0.2" 
-        color="#FF5722" 
-        animation="property: position; to: 0 1 0; loop: true; dur: 2000">
-      </a-sphere>
-    </a-marker>
-    
-    <!-- Cámara para RA -->
-    <a-entity camera></a-entity>
-  </a-scene>
-</body>
-</html>
+<html>
+    <head>
+        <!-- script de A-Frame version1 1-0-0 -->
+        <script src="https://aframe.io/release/1.0.4/aframe.min.js"></script>
+        <!-script de AR.JS con soporte de marker + location -->
+        <script> src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    </head>
+    <body style="margin : 0px: overflow: hidden;">
+        <a-scene embedded arjs>
+            <a-maker preset="hiro">
+                <a-sphere position="0 0 0" radius="o.6" color="#EF2D5E"></A-sphere>
+            </amarker>
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>                    
